@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  app:
+    build: .
+    command: rails s -b 0.0.0.0 -p 3001
+    volumes:
+      - .:/home
+    ports:
+      - "3001:3001"
