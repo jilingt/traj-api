@@ -12,7 +12,7 @@ class InputsController < ApplicationController
 
             #inputs = params.permit(:lat, :lon, :time, :altitude, :bal, :setpoint, :tolerance).as_json
             inputs = {
-                activity: "",
+                activity: "optimize",
                 state0: {
                     lat: params[:lat],
                     lon: params[:lon],
