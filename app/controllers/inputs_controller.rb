@@ -1,5 +1,5 @@
 require 'json'
-require 'Inputs'
+require 'trajectory_interface'
 
 class InputsController < ApplicationController
     def run_prediction
