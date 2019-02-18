@@ -90,7 +90,7 @@ class InputsController < ApplicationController
 
         puts("inputs is #{inputs}")
 
-        prediction = Inputs.predict(inputs)
+        prediction = predict(inputs)
 
         puts("prediction is #{prediction}")
         #render json: { predict(function_name, inputs) }
