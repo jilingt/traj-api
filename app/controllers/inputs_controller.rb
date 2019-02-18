@@ -1,4 +1,5 @@
 require 'json'
+require 'Inputs'
 
 class InputsController < ApplicationController
     def run_prediction
@@ -89,7 +90,7 @@ class InputsController < ApplicationController
 
         puts("inputs is #{inputs}")
 
-        prediction = predict(inputs)
+        prediction = Inputs.predict(inputs)
 
         puts("prediction is #{prediction}")
         #render json: { predict(function_name, inputs) }
